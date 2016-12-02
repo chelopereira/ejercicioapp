@@ -1,0 +1,16 @@
+<%=form_for(@torre) do |i|%>
+	<h2>Ingrese los datos de la Torre</h2>
+	<div>
+		<%= i.label :nombre%>
+		<%= i.text_field :nombre%>
+	</div>
+	<br>
+	<div>
+		<%= i.label :portero%>
+		<%= i.text_field :portero%>
+	</div>
+	<br>
+	<div>
+		<%= i.submit%>
+	</div>
+<%end%>

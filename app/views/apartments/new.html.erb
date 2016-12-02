@@ -1,0 +1,21 @@
+<%=form_for(@apartamento) do |i|%>
+	<h2>Ingrese los datos del Apartamento</h2>
+	<div>
+		<%= i.label :nombre%>
+		<%= i.text_field :nombre%>
+	</div>
+	<br>
+	<div>
+		<%= i.label :torre%>
+		<%= i.text_field :torre%>
+	</div>
+	<br>
+	<div>
+		<%= i.label :piso%>
+		<%= i.text_field :piso%>
+	</div>
+	<br>
+	<div>
+		<%= i.submit%>
+	</div>
+<%end%>
