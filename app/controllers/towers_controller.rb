@@ -19,11 +19,11 @@ class TowersController < ApplicationController
   		respond_to do |format|
   			if @torre.save
   				format.html {redirect_to towers_path, notice: 'Torre guardada en la base de datos'}
-				format.json {render :index, status: :created}
-			else
-				format.html {render :new, notice: 'No se pudo guardar la torre, intenta de nuevo'}
-				format.json {render json: @torre.errors, status: :unprocessable_entity}
-			end
+				  format.json {render :index, status: :created}
+			  else
+				  format.html {render :new, notice: 'No se pudo guardar la torre, intenta de nuevo'}
+				  format.json {render json: @torre.errors, status: :unprocessable_entity}
+			  end
   		end	
   	end
 

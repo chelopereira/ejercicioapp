@@ -1,0 +1,21 @@
+<%=form_for(@persona) do |i|%>
+	<h2>Ingrese los datos de la Persona</h2>
+	<div>
+		<%= i.label :nombre%>
+		<%= i.text_field :nombre%>
+	</div>
+	<br>
+	<div>
+		<%= i.label :identificacion%>
+		<%= i.text_field :identificacion%>
+	</div>
+	<br>
+	<div>
+		<%= i.label :apartamento%>
+		<%= i.text_field :apartamento%>
+	</div>
+	<br>
+	<div>
+		<%= i.submit%>
+	</div>
+<%end%>

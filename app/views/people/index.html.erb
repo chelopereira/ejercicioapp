@@ -1,0 +1,24 @@
+<h1>Lista de todas las Personas</h1>
+
+<table>
+	<!-- <caption>table title and/or explanatory text</caption> -->
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Identificacion</th>
+			<th>Apartamento</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- Solo EJECUTAR se utiliza <% %> -->
+		<!-- MOSTRAR y EJECUTAR se utiliza <%= %> -->
+		<% @personas.each do |x| %>
+		<tr>
+			<td><%=x.nombre%></td>
+			<td><%=x.identificacion%></td>
+			<td><%=x.apartamento%></td>
+			<td><%= link_to 'Ver datos de la persona', person_path(x) %></td>
+		</tr>
+		<%end%>
+	</tbody>
+</table>
